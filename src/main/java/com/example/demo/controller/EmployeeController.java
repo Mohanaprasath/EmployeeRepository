@@ -42,7 +42,7 @@ public class EmployeeController {
 	 * @return Employee's data
 	 */
 	@PutMapping(value = "/{id}", consumes = { "application/json" })
-	public EmployeeDataDTO saveorUpdateEmployee(@Valid @RequestBody EmployeeData data, @PathVariable int id) {
+	public EmployeeDataDTO saveOrUpdateEmployee(@Valid @RequestBody EmployeeData data, @PathVariable int id) {
 
 		return employeeService.saveorUpdateEmployee(data, id);
 
